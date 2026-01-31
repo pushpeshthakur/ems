@@ -1,3 +1,5 @@
+//localStorage.clear()
+
 const employees = [
   {
     id: 1,
@@ -5,6 +7,12 @@ const employees = [
     email: "amit@company.com",
     role: "employee",
     password: "123",
+    taskCounts:{
+      active:1,
+      completed:1,
+      newTask:1,
+      failed:1,
+    },
     tasks: [
       {
         title: "Complete UI Design",
@@ -45,6 +53,12 @@ const employees = [
     email: "neha@company.com",
     role: "employee",
     password: "123",
+    taskCounts:{
+      active:2,
+      completed:1,
+      newTask:2,
+      failed:1,
+    },
     tasks: [
       {
         title: "Create Login Page",
@@ -95,6 +109,12 @@ const employees = [
     email: "rohit@company.com",
     role: "employee",
     password: "123",
+    taskCounts:{
+      active:1,
+      completed:1,
+      newTask:1,
+      failed:1,
+    },
     tasks: [
       {
         title: "Setup MongoDB",
@@ -135,6 +155,12 @@ const employees = [
     email: "priya@company.com",
     role: "employee",
     password: "123",
+    taskCounts:{
+      active:2,
+      completed:1,
+      newTask:2,
+      failed:1,
+    },
     tasks: [
       {
         title: "Prepare Presentation",
@@ -185,6 +211,12 @@ const employees = [
     email: "karan@company.com",
     role: "employee",
     password: "123",
+    taskCounts:{
+      active:1,
+      completed:1,
+      newTask:1,
+      failed:1,
+    },
     tasks: [
       {
         title: "Testing Application",
