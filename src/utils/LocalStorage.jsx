@@ -158,7 +158,7 @@ const employees = [
     taskCounts:{
       active:2,
       completed:1,
-      newTask:2,
+      newTask:1,
       failed:1,
     },
     tasks: [
@@ -169,7 +169,7 @@ const employees = [
         category: "Presentation",
         active: true,
         completed: false,
-        newTask: true,
+        newTask: false,
         failed: false
       },
       {

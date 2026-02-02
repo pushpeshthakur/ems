@@ -32,16 +32,16 @@ const submitHandler = (e) => {
                     onChange={(e) => {
                         setEmail(e.target.value);
                     }}
-                    required className="text-xl outline-none bg-transparent border-2 border-emerald-600 rounded-full py-5 px-5" type="email" placeholder=" Enter your email" 
+                    required className="text-xl outline-none bg-transparent border-2 border-emerald-600 rounded-full py-5 px-5 text-gray-400" type="email" placeholder=" Enter your email" 
                     />
                     <input 
                     value={password}
                     onChange={(e) => {
                         setPassword(e.target.value);
                     }}
-                    required className="text-xl outline-none bg-transparent border-2 border-emerald-600 rounded-full py-5 px-5 my-5" type="password" placeholder="Enter your password" 
+                    required className="text-xl outline-none bg-transparent border-2 border-emerald-600 rounded-full py-5 px-5 my-5 text-gray-400" type="password" placeholder="Enter your password" 
                     />
-                    <button className="mt-6 text-xl bg-emerald-600 rounded-full py-5 px-27" type="submit">Log in</button>
+                    <button className="mt-6 text-xl bg-emerald-600 rounded-full py-5 px-27 text-black-400" type="submit">Log in</button>
                 </form>
             </div>
         </div>
