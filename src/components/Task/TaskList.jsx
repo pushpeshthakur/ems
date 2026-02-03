@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import AcceptTask from "./AcceptTask";
 import NewTask from "./NewTask";
 import CompleteTask from "./CompleteTask";
 import FailedTask from "./FailedTask";
 
+
 const TaskList = ({data}) => {
     
     return (
-        <div id="TaskList"className='flex items-center justify-start gap-5 flex-nowrap overflow-x-auto h-[65%] w-full mt-10 rounded-xl py-5'>
+        <div id="TaskList" className='flex items-center justify-start gap-5 flex-nowrap overflow-x-auto h-[65%] w-full mt-10 rounded-xl py-5'>
             {data.tasks.map((elem, idx) => {
 
                 if(elem.newTask){
