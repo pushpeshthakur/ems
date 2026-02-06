@@ -23,9 +23,19 @@ const App = () => {
     },[])
 
     const handleLogin = (email, password) => {
+
+        // if(userData){
+        //     const admin1 = userData?.admin?.find((e) => email == e,email && password == e.password)
+        //     if(admin1){
+        //         setUser('admin1')
+        //         localStorage.setItem('loggedInUser',JSON.stringify({role :'admin', data:admin1}))
+        //     }
+
+
         if(email == 'admin@me.com' && password == '123'){
             setUser('admin')
             localStorage.setItem('loggedInUser',JSON.stringify({role :'admin'}))
+
         } else if (userData){
             const employee = userData?.employees?.find((e) => email == e.email && password == e.password)
             if(employee){
@@ -42,7 +52,7 @@ const App = () => {
     return (
         <>
         {!user ? <Login handleLogin={handleLogin}/> : ''}
-        {user == 'admin' ? <AdminDashboard changeUser={setUser}/> : ''}
+        {user == 'admin' ? <AdminDashboard changeUser={setUser} data={"Admin"} /> : ''}
         {user == 'employee' ? <EmployeeDashboard changeUser={setUser} data={loggedInUserData} /> : ''}
        
         </>
