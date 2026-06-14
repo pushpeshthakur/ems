@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/set-state-in-effect */
 import React from 'react';
 import Login from './components/Auth/Login';
 import EmployeeDashboard from './components/Dashboard/EmployeeDashboard';
@@ -10,7 +11,7 @@ const App = () => {
 
     const [user, setUser] = useState(null)
     const [loggedInUserData, setLoggedInUserData] = useState(null)
-    const [userData, setUserData] = useContext(AuthContext)
+    const [userData] = useContext(AuthContext)
 
     useEffect(() => {
         const loggedInUser = localStorage.getItem('loggedInUser')
