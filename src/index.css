@@ -1,11 +1,13 @@
 @import "tailwindcss";
 
+
+
+
 *{
-  /* color: #fff; */
-  font-family: sans-serif;
+    font-family: "Outfit", sans-serif;
 }
 body {
-    background: hsl(0, 0%, 0%);
+    background: hsl(0, 0%, 14%);
     
 }
 #AllTask,#TaskList::-webkit-scrollbar {

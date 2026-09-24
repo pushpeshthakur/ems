@@ -33,7 +33,7 @@ const App = () => {
         //     }
 
 
-        if(email == 'admin@me.com' && password == '123'){
+        if(email == 'admin@company.com' && password == '123'){
             setUser('admin')
             localStorage.setItem('loggedInUser',JSON.stringify({role :'admin'}))
 
